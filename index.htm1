@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiki | روابط حساباتي</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #4b382d;
+
+  background:
+    linear-gradient(rgba(245,225,205,.35), rgba(245,225,205,.35)),
+    url("IMG-20260901-WA0007.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 92%;
+  max-width: 680px;
+  margin: auto;
+  padding: 35px 15px 50px;
+}
+
+.avatar {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 25px rgba(80,40,20,.4);
+}
+
+h1 {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 34px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 28px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: ltr;
+
+  min-height: 82px;
+  padding: 12px 20px;
+
+  background: rgba(255,255,255,.82);
+  border: 2px solid rgba(160,110,70,.65);
+  border-radius: 20px;
+
+  text-decoration: none;
+  color: #4b382d;
+
+  box-shadow: 0 5px 18px rgba(80,40,20,.12);
+  transition: .2s;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.name {
+  direction: rtl;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img class="avatar" src="IMG-20260901-WA0006.jpg">
+
+  <h1>Tiki</h1>
+  <div class="subtitle">روابط حساباتي</div>
+
+  <div class="links">
+
+    <a class="link"
+       href="https://youtube.com/@tikiworld-1"
+       target="_blank">
+      <img class="icon"
+           src="https://cdn.simpleicons.org/youtube/FF0000">
+      <span class="name">YouTube</span>
+    </a>
+
+    <a class="link"
+       href="https://www.instagram.com/tiki_world99"
+       target="_blank">
+      <img class="icon"
+           src="https://cdn.simpleicons.org/instagram/E4405F">
+      <span class="name">Instagram</span>
+    </a>
+
+    <a class="link"
+       href="https://www.facebook.com/share/1EzZz6iwHf/"
+       target="_blank">
+      <img class="icon"
+           src="https://cdn.simpleicons.org/facebook/1877F2">
+      <span class="name">Facebook</span>
+    </a>
+
+    <a class="link"
+       href="https://www.tiktok.com/@tikis.world1"
+       target="_blank">
+      <img class="icon"
+           src="https://cdn.simpleicons.org/tiktok/000000">
+      <span class="name">TikTok</span>
+    </a>
+
+  </div>
+
+  <footer>
+    Tiki 2026 ©
+  </footer>
+
+</div>
+
+</body>
+</html>
