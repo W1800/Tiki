@@ -103,7 +103,38 @@ footer {
   margin-top: 35px;
   font-size: 14px;
 }
-.star {
+.link {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 250%;
+  background: linear-gradient(
+    transparent,
+    rgba(255,255,255,0.8),
+    transparent
+  );
+  left: -100px;
+  top: -80%;
+  transform: rotate(25deg);
+  animation: lightMove 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes lightMove {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 120%;
+  }
+}.star {
   position: fixed;
   width: 3px;
   height: 3px;
