@@ -156,6 +156,33 @@ footer {
   </footer>
 
 </div>
+  <script>
+const cats = ["😺","🐱","😸","😻","🐾"];
+
+function dropCat() {
+  const cat = document.createElement("div");
+  cat.textContent = cats[Math.floor(Math.random() * cats.length)];
+
+  cat.style.position = "fixed";
+  cat.style.top = "-50px";
+  cat.style.left = Math.random() * 100 + "vw";
+  cat.style.fontSize = "30px";
+  cat.style.zIndex = "9999";
+  cat.style.pointerEvents = "none";
+  cat.style.transition = "transform 4s linear, opacity 4s linear";
+
+  document.body.appendChild(cat);
+
+  setTimeout(() => {
+    cat.style.transform = "translateY(110vh) rotate(360deg)";
+    cat.style.opacity = "0";
+  }, 50);
+
+  setTimeout(() => cat.remove(), 4500);
+}
+
+setInterval(dropCat, 350);
+</script>
 
 </body>
 </html>
